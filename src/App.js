@@ -54,18 +54,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <div div className="container">
+      <div className="text-center">
         <h1>Country selecor</h1>
         <Button onClick={() => this.getCountry('france')}>France</Button >
         <Button onClick={() => this.getCountry('brazil')}>Brazil</Button>
         <Button onClick={() => this.getCountry('croatia')}>Croatia</Button>
-        <Card
-          flag={this.state.flag}
-          name={this.state.name}
-          capital={this.state.capital}
-          population={this.state.population}
-          region={this.state.region} />
-
+        <Button onClick={() => this.getCountry('spain')}>Espagne</Button>
+        {/* <Card
+          flag = {this.state.flag}
+          name = {this.state.name}
+          capital = {this.state.capital}
+          population = {this.state.population}
+          region = {this.state.region} /> */}
+        <Card {...this.state} />
       </div>
     );
   }

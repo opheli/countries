@@ -4,13 +4,14 @@ import React from 'react'
 class Card extends React.Component {
   render () {
     return (
-      <div className="card" style={{width : '250px'}}>
-      <img src={this.props.flag} class="card-img-top" alt="..."/>
+      <div className="card mx-auto" style={{width : '300px'}}>
+      <img src={this.props.flag} class="card-img-top" alt="flag"/>
       <div className="card-body">
-        <br />Name : {this.props.name}
-        <br />Capital : {this.props.capital}
-        <br />Population : {this.props.population}
-        <br />Region : {this.props.region}
+        <h2><span class="material-icons">public</span>  Country: {this.props.name}</h2>
+        <h3>Capital: {this.props.capital}</h3>
+        <p><span class="material-icons">people</span>   Population : {this.props.population}</p>
+        <p>Region: {this.props.region}</p>
+        
       </div>
     </div>
 
