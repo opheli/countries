@@ -9,7 +9,7 @@ class Card extends React.Component {
       <div className="card-body">
         <h2><span class="material-icons">public</span>  Country: {this.props.name}</h2>
         <h3>Capital: {this.props.capital}</h3>
-        <p><span class="material-icons">people</span>   Population : {this.props.population}</p>
+        <p><span class="material-icons">people</span>   Population: {this.props.population}</p>
         <p>Region: {this.props.region}</p>
         
       </div>

@@ -16,19 +16,13 @@ class App extends React.Component {
 
   async componentDidMount() {
     try {
-      const result = await fetch('https://restcountries.eu/rest/v2/name/france')
-      const country = await result.json()
-      this.setState({
-        name: country[0].name,
-        capital: country[0].capital,
-        flag: country[0].flag,
-        population: country[0].population,
-        region: country[0].region,
-      })
+      this.getCountry('france')
     } catch (error) {
       console.error(error)
     }
+    
 
+    
     // fetch('https://restcountries.eu/rest/v2/name/france')
     //   .then(result => result.json())
     //   .then(country => console.log('METHODE THEN', country))
