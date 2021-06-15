@@ -20,9 +20,6 @@ class App extends React.Component {
     } catch (error) {
       console.error(error)
     }
-    
-
-    
     // fetch('https://restcountries.eu/rest/v2/name/france')
     //   .then(result => result.json())
     //   .then(country => console.log('METHODE THEN', country))
@@ -49,11 +46,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="text-center">
-        <h1>Country selecor</h1>
+        <h1>Country selector</h1>
         <Button onClick={() => this.getCountry('france')}>France</Button >
         <Button onClick={() => this.getCountry('brazil')}>Brazil</Button>
         <Button onClick={() => this.getCountry('croatia')}>Croatia</Button>
-        <Button onClick={() => this.getCountry('spain')}>Espagne</Button>
+        <Button onClick={() => this.getCountry('spain')}>Spain</Button>
         {/* <Card
           flag = {this.state.flag}
           name = {this.state.name}
