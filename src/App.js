@@ -20,10 +20,6 @@ class App extends React.Component {
     } catch (error) {
       console.error(error)
     }
-    // fetch('https://restcountries.eu/rest/v2/name/france')
-    //   .then(result => result.json())
-    //   .then(country => console.log('METHODE THEN', country))
-    //   .catch(error => console.error(error))
   }
 
   getCountry = async (country) => {
@@ -51,12 +47,6 @@ class App extends React.Component {
         <Button onClick={() => this.getCountry('brazil')}>Brazil</Button>
         <Button onClick={() => this.getCountry('croatia')}>Croatia</Button>
         <Button onClick={() => this.getCountry('spain')}>Spain</Button>
-        {/* <Card
-          flag = {this.state.flag}
-          name = {this.state.name}
-          capital = {this.state.capital}
-          population = {this.state.population}
-          region = {this.state.region} /> */}
         <Card {...this.state} />
       </div>
     );
